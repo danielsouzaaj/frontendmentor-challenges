@@ -77,6 +77,10 @@ body {
     color: var(--clr-dark-cyan);
 }
 
+.product__original-price {
+    text-decoration: line-through;
+}
+
 .btn {
     display: flex;
     align-items: center;
