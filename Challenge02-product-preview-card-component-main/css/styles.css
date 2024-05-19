@@ -96,6 +96,7 @@ body {
     text-decoration: none;
     font-weight: 700;
     color: var(--clr-white);
+    transition: all 0.5s ease;
 }
 
 .btn::before {
