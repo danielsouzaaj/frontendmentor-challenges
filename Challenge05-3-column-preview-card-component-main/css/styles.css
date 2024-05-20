@@ -1,0 +1,109 @@
+:root {
+    --clr-bright-orange: hsl(31, 77%, 52%);
+    --clr-dark-cyan: hsl(184, 100%, 22%);
+    --clr-very-dark-cyan: hsl(179, 100%, 13%);
+    --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --clr-very-light-gray: hsl(0, 0%, 95%);
+
+    --ff-primary: "Lexend Deca", sans-serif;
+    --ff-secondary: "Big Shoulders Display", sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+body {
+    background-color: var(--clr-very-light-gray);
+    font-size: 0.9375rem;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    color: var(--clr-transparent-white);
+    min-height: 100vh;
+    margin: 5rem 1.5625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 335px;
+    border-radius: 0.625rem;
+    overflow: hidden;
+}
+
+.sedans {
+    background-color: var(--clr-bright-orange);
+}
+
+.suvs {
+    background-color: var(--clr-dark-cyan);
+}
+
+.luxury {
+    background-color: var(--clr-very-dark-cyan);
+}
+
+.card {
+    flex: 1;
+    padding: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    row-gap: 1.875rem;
+}
+
+.card__content {
+    flex: 1;
+}
+
+.card__title {
+    font-family: var(--ff-secondary);
+    font-size: 2.5rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-very-light-gray);
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+}
+
+.card__btn {
+    background-color: var(--clr-very-light-gray);
+    border: 0.0625rem solid var(--clr-very-light-gray);
+    border-radius: 1.5625rem;
+    padding: 0.625rem 1.5625rem;
+    text-decoration: none;
+    transition: all 0.4s ease-in;
+}
+
+.sedans .card__btn {
+    color: var(--clr-bright-orange);
+}
+
+.suvs .card__btn {
+    color: var(--clr-dark-cyan);
+}
+
+.luxury .card__btn {
+    color: var(--clr-very-dark-cyan);
+}
+
+.card__btn:hover {
+    background-color: transparent;
+    color: var(--clr-very-light-gray);
+}
+
+@media (min-width: 960px) {
+
+    body {
+        margin: 0;
+    }
+
+    main {
+        flex-direction: row;
+        max-width: 930px;
+        min-height: 480px;
+    }
+}
