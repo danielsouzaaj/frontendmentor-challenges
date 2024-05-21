@@ -14,7 +14,7 @@
 body {
     background-color: var(--clr-dark-cyan);
     font-family: var(--ff-default);
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: var(--fw-regular);
     color: var(--clr-darkgray);
     height: 100vh;
@@ -34,8 +34,8 @@ body {
     background-image: url(../images/bg-pattern-top.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 978px;
-    height:978px;
+    width: 61.125rem;
+    height:61.125rem;
     position: absolute;
     top: -66%;
     right: 52%;
@@ -46,8 +46,8 @@ body {
     background-image: url(../images/bg-pattern-bottom.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 978px;
-    height:978px;
+    width: 61.125rem;
+    height:61.125rem;
     position: absolute;
     bottom: -84%;
     left: 48%;
@@ -56,7 +56,7 @@ body {
 
 .card {
     background-color: var(--clr-white);
-    border-radius: 16px;
+    border-radius: 1rem;
     text-align: center;
     overflow: hidden;
 }
@@ -66,23 +66,23 @@ body {
 }
 
 .card__content__image {
-    width: 95px;
-    border: 5px solid var(--clr-white);
-    border-radius: 50px;
+    width: 5.9375rem;
+    border: 0.3125rem solid var(--clr-white);
+    border-radius: 3.125rem;
     position: absolute;
     left: 50%;
-    top: -48px;
+    top: -3rem;
     transform: translateX(-50%);
     overflow: hidden;
 }
 
 .card__content {
-    padding: 65px 0 20px;
+    padding: 4.0625rem 0 1.25rem;
 }
 
 .card__content__name,
 .card__footer__stats__number {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: var(--fw-bold);
     color: var(--clr-very-dark-desaturated-blue);
 }
@@ -93,8 +93,8 @@ body {
 }
 
 .card__footer {
-    padding: 20px 30px;
-    border-top: 1px solid hsla(0, 0%, 59%, 0.304);
+    padding: 1.25rem 1.875rem;
+    border-top: 0.0625rem solid hsla(0, 0%, 59%, 0.304);
 }
 
 .card__footer__list {
@@ -117,15 +117,15 @@ body {
 @media (max-width: 380px) {
 
     .container {
-        padding: 0 20px;
+        padding: 0 1.25rem;
     }
 
     .bg-balloon__top{
         background-image: url(../images/bg-pattern-top.svg);
         background-size: contain;
         background-repeat: no-repeat;
-        width: 978px;
-        height:978px;
+        width: 61.125rem;
+        height:61.125rem;
         position: absolute;
         top: -82%;
         right: 50%;
@@ -136,8 +136,8 @@ body {
         background-image: url(../images/bg-pattern-bottom.svg);
         background-size: contain;
         background-repeat: no-repeat;
-        width: 978px;
-        height:978px;
+        width: 61.125rem;
+        height:61.125rem;
         position: absolute;
         bottom: -94%;
         left: 36%;
