@@ -1,0 +1,128 @@
+:root {
+    --clr-soft-blue: hsl(215, 51%, 70%);
+    --clr-cyan: hsl(178, 100%, 50%);
+    --clr-very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --clr-very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --clr-very-dark-blue-line: hsl(215, 32%, 27%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    --ff-default: "Outfit", sans-serif;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-semibold: 600;
+}
+
+body {
+    background-color: var(--clr-very-dark-blue-main-bg);
+    font-family: var(--ff-default);
+    font-size: 16px;
+    font-weight: var(--fw-light);
+    color: var(--clr-soft-blue);
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--clr-very-dark-blue-card-bg);
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 310px;
+}
+
+.card__image {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: all 3s ease-in;
+    position: relative;
+}
+
+.card__image__hover {
+    background-color: hsl(178, 100%, 50%, 40%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+}
+
+.card__image__hover:hover {
+    opacity: 1;
+}
+
+.card__content {
+    padding: 1rem 0 0.625rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.card__content__title {
+    font-size: 1.25rem;
+    font-weight: var(--fw-semibold);
+    color: var(--clr-white);
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.card__content__title:hover {
+    color: var(--clr-cyan);
+}
+
+.card__content__info {
+    font-size: 1rem;
+    font-weight: var(--fw-regular);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__content__info__price {
+    color: var(--clr-cyan);
+}
+
+.card__content__info__price::before {
+    content: url(../images/icon-ethereum.svg);
+    vertical-align: middle;
+    margin-right: 0.3125rem;
+}
+
+.card__content__info__days::before {
+    content: url(../images/icon-clock.svg);
+    vertical-align: middle;
+    margin-right: 0.3125rem;
+}
+
+.card__footer {
+    padding: 1rem 0 0.3125rem;
+    border-top: 0.0625rem solid var(--clr-very-dark-blue-line);
+    display: flex;
+    align-items: center;
+    column-gap: 0.75rem;
+}
+
+.card__footer__creator-image {
+    width: 1.875rem;
+    height: 1.875rem;
+    border: 0.125rem solid var(--clr-white);
+    border-radius: 50%;
+}
+
+.card__footer__creator__name {
+    color: var(--clr-white);
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.card__footer__creator__name:hover {
+    color: var(--clr-cyan);
+}
