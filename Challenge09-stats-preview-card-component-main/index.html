@@ -12,15 +12,40 @@
   <title>Frontend Mentor | Stats preview card component</title>
 </head>
 <body>
+  <main>
+    <article class="card">
+      <picture class="card__image">
+        <source media="(min-width: 1040px)" srcset="./images/image-header-desktop.jpg">
+        <img src="./images/image-header-mobile.jpg" alt="">
+      </picture>
 
-  Get insights that help your business grow.
+      <div class="card__content">
+        <h1 class="card__content__title">Get <span>insights</span> that help your business grow.</h1>
+    
+        <p class="card__content__description">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.</p>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+        <ul class="card__stats">          
+          <li class="card__stats__item">
+            <span class="card__stats__item__number">10k+</span>
+            <h5 class="card__stats__item__category">companies</h5>
+          </li>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+          <li class="card__stats__item"> 
+            <span class="card__stats__item__number">314</span>
+            <h5 class="card__stats__item__category">templates</h5>
+          </li>
+
+          <li class="card__stats__item">
+            <span class="card__stats__item__number">12m+</span>
+            <h5 class="card__stats__item__category">queries</h5>
+          </li>
+        </ul>
+      </div>
+        
+    </article>
+  </main>
+
 
 </body>
 </html>
