@@ -3,35 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/styles.css" />
   <title>Frontend Mentor | Single Price Grid Component</title>
 </head>
 <body>
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
+  <main class="wrapper">
+    <div class="price__container">
+      <div class="price__row">
+        <h2 class="price__title">Join our community</h2>
+        <h3 class="price__subtitle">30-day, hassle-free money back guarantee</h3>
+        <p class="price__description">Gain access to our full library of tutorials along with expert code reviews. 
+        Perfect for any developers who are serious about honing their skills.</p>
+      </div>
+      
+      <div class="price__row">
+        <div class="price__col">
+          <h2 class="price__col__title">Monthly Subscription</h2>
+        
+          <p class="price__col__amount"><span>&dollar;29</span> per month</p>
+        
+          <p class="price__col__description">Full access for less than &dollar;1 a day</p>
+        
+          <button class="signup-btn">Sign Up</button>
+        </div>
+  
+        <div class="price__col">
+          <h2 class="price__col__title">Why Us</h2>
+        
+          <ul class="price__benefits">
+            <li>Tutorials by industry experts</li>
+            <li>Peer &amp; expert code review</li>
+            <li>Coding exercises</li>
+            <li>Access to our GitHub repos</li>
+            <li>Community forum</li>
+            <li>Flashcard decks</li>
+            <li>New videos every week</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+  </main>
 </body>
 </html>
