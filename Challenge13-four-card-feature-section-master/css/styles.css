@@ -1,0 +1,153 @@
+:root {
+    --clr-red: hsl(0, 78%, 62%);
+    --clr-cyan: hsl(180, 62%, 55%);
+    --clr-orange: hsl(34, 97%, 64%);
+    --clr-blue: hsl(212, 86%, 64%);
+    --clr-very-dark-blue: hsl(234, 12%, 34%);
+    --clr-grayish-blue: hsl(229, 6%, 66%);
+    --clr-very-light-gray: hsl(0, 0%, 98%);
+
+    --ff-default: "Poppins", sans-serif;
+
+    --fw-extra-light: 200;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+}
+
+body {
+    background-color: var(--clr-very-light-gray);
+    font-family: var(--ff-default);
+    font-weight: 0.9375rem;
+    color: var(--clr-grayish-blue);
+}
+
+/* Text styles */
+
+.title {
+    font-size: 1.65rem;
+    font-weight: var(--fw-extra-light);
+    color: var(--clr-very-dark-blue);
+}
+
+.subtitle {
+    font-size: 1.65rem;
+    font-weight: var(--fw-semi-bold);
+    color: var(--clr-very-dark-blue);
+}
+
+.description {
+    text-align: center;
+}
+
+.title--semi-bold {
+    font-weight: var(--fw-semi-bold);
+}
+
+.card__title {
+    font-size: 1.3rem;
+    font-weight: var(--fw-semi-bold);
+    color: var(--clr-very-dark-blue);
+}
+
+.card__description {
+    font-size: 14px;
+}
+
+/* Layout styles */
+
+.wrapper {
+    min-height: 100vh;
+    margin: 4rem 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    max-width: 540px;
+    margin-bottom: 4rem;
+}
+
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 24px;
+}
+
+.cards-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+}
+
+.card {
+    background-color: var(--clr-very-light-gray);
+    max-width: 360px;
+    padding: 26px;
+    border-top: 4px solid;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+}
+
+.card__image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+/* General styles */
+
+.title-container {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.card__title {
+    margin-bottom: 4px;
+}
+
+.card__description {
+    margin-bottom: 34px;
+}
+
+.supervisor {
+    border-color: var(--clr-cyan);
+}
+
+.team-builder {
+    border-color: var(--clr-red);
+}
+
+.karma {
+    border-color: var(--clr-orange);
+}
+
+.calculator {
+    border-color: var(--clr-blue);
+}
+
+/* Media queries */
+
+@media (min-width: 1200px) {
+
+    /* Text styles */
+
+    .title,
+    .subtitle {
+        font-size: 2.4rem;
+    }
+
+    /* Layout styles */
+
+    .header {
+        margin-bottom: 4rem;
+    }
+
+    .cards-section {
+        flex-direction: row;
+        column-gap: 24px;
+    }
+}
