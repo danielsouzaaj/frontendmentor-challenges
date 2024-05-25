@@ -3,21 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
   <title>Frontend Mentor | Blog preview card</title>
 </head>
 <body>
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
+  <main class="wrapper">
+    <article class="card">
+      <div class="card__image">
+        <img src="./assets/images/illustration-article.svg" alt="">
+      </div>
+    
+      <div class="card__content">
+        <span class="card__category">Learning</span>
+      
+        <p class="card__meta">Published 21 Dec 2023</p>
+      
+        <h2 class="card__title">HTML & CSS foundations</h2>
+      
+        <p class="card__about">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      </div>
+    
+      <div class="user-data">
+        <div class="card__author__image">
+          <img src="./assets/images/image-avatar.webp" alt="avatar">
+        </div>
+        <p class="card__author__name">Greg Hooper</p>
+      </div>
+    </article>
+  </main>
 </body>
 </html>
