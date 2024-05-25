@@ -1,0 +1,133 @@
+:root {
+    --clr-yellow: hsl(47, 88%, 63%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey: hsl(0, 0%, 50%);
+    --clr-black: hsl(0, 0%, 7%);
+    --ff-default: "Figtree", sans-serif;
+    --fw-medium: 500;
+    --fw-extra-bold: 800;
+}
+
+body {
+    background-color: var(--clr-yellow);
+    font-family: var(--ff-default);
+    font-size: 0.875rem;
+    color: var(--clr-black);
+    font-weight: var(--fw-medium);
+}
+
+/* Text styles */
+
+.card__category {
+    font-size: 0.75rem;
+    font-weight: var(--fw-extra-bold);
+}
+
+.card__meta {
+    font-size: 0.75rem;
+}
+
+.card__title {
+    font-size: 1.25rem;
+    font-weight: var(--fw-extra-bold);
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.card__title:hover {
+    color: var(--clr-yellow);
+}
+
+.card__about {
+    color: var(--clr-grey);
+}
+
+.card__author__name {
+    font-size: 0.875rem;
+    font-weight: var(--fw-800);
+}
+
+/* Layout styles */
+
+.wrapper {
+    min-height: 100vh;
+    margin: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    max-width: 384px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.user-data {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+/* General styles */
+
+.card {
+    background-color: var(--clr-white);
+    padding: 24px;
+    border: 1px solid var(--clr-black);
+    border-radius: 20px;
+    box-shadow: 8px 8px var(--clr-black);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 16px 16px var(--clr-black);
+}
+
+.card__image {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card__content *:not(.card__about) {
+    margin-bottom: 12px;
+}
+
+.card__category {
+    background-color: var(--clr-yellow);
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.card__author__image {
+    max-width: 32px;
+}
+
+@media (min-width: 425px) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    /* Text styles */
+
+    .card__category {
+        font-size: 0.875rem;
+    }
+
+    .card__meta {
+        font-size: 0.875rem;
+    }
+
+    .card__title {
+        font-size: 1.5rem;
+    }
+
+    .card__author__name {
+        font-size: 0.875rem;
+    }
+}
+
+
