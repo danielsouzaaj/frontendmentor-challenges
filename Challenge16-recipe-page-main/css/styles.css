@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Outfit";
+    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Young Serif";
+    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+:root {
+    --clr-nutmeg: hsl(14, 45%, 36%);
+    --clr-dark-raspberry: hsl(332, 51%, 32%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-rose-white: hsl(330, 100%, 98%);
+    --clr-eggshell: hsl(30, 54%, 90%);
+    --clr-light-grey: hsl(30, 18%, 87%);
+    --clr-wenge-brown: hsl(30, 10%, 34%);
+    --clr-dark-charcoal: hsl(24, 5%, 18%);
+
+    --ff-primary: "Outfit", sans-serif;
+    --ff-secondary: "Young Serif", serif;
+
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+body {
+    background-color: var(--clr-white);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-400);
+    font-size: 1rem;
+    color: var(--clr-dark-charcoal);
+}
+
+/* Text styles */
+
+.hero-title {
+    font-family: var(--ff-secondary);
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: var(--fw-400);
+}
+
+.hero-list-title {
+    font-size: 18px;
+    font-weight: var(--fw-700);
+    color: var(--clr-dark-raspberry);
+}
+
+.list-item-title {
+    font-weight: var(--fw-700);
+}
+
+.section-title {
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-400);
+    color: var(--clr-nutmeg);
+}
+
+/* Layout styles */
+
+.wrapper {
+    padding: 0 24px;
+}
+
+/* General styles */
+
+.hero *:not(.hero-list),
+.ingredients *:not(.list) {
+    margin-bottom: 14px;
+}
+
+.hero-list {
+    background-color: var(--clr-rose-white);
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.ingredients,
+.instructions {
+    padding: 32px 0;
+    border-bottom: 1px solid var(--clr-light-grey);
+}
+
+.nutrition {
+    padding: 32px 0;
+}
+
+.nutrition-table {
+    min-width: 100%;
+}
+
+.table-line {
+    display: block;
+    padding: 5px;
+}
+
+.table-line:not(:last-of-type) {
+    border-bottom: 1px solid var(--clr-light-grey);
+}
+
+.nutrition-value {
+    font-weight: var(--fw-600);
+    color: var(--clr-dark-raspberry);
+}
