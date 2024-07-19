@@ -1,36 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <title>Frontend Mentor | Ping coming soon page</title>
-</head>
-<body>
-  <header class="header">
-    <div class="header-logo">
-      <img src="./images/logo.svg" alt="Logo">
-    </div>
-  </header>
-  <main class="wrapper">
-    <h1 class="title"><span>We are launching</span> soon!</h1>
-    <p class="subtitle">Subscribe and get notified</p>
-    
-    <form class="form">
-      <input type="email" placeholder="Your email address...">
-      <button class="btn">Notify Me</button>
-    </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
 
-    <div class="banner">
-      <img src="./images/illustration-dashboard.png">
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-logo">
+          <img src="./images/logo.svg" alt="Logo" />
+        </div>
+      </header>
+
+      <main class="wrapper">
+        <section class="headline">
+          <h1 class="title">
+            <span class="title-light">We are launching</span> soon!
+          </h1>
+          <p class="subtitle">Subscribe and get notified</p>
+        </section>
+
+        <form class="form-container" novalidate>
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email address..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit" class="btn btn-text">Notify Me</button>
+        </form>
+
+        <section class="image-container">
+          <div class="banner">
+            <img src="./images/illustration-dashboard.png" />
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <ul class="links">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+
+        <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+      </footer>
     </div>
-  
-    <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
-  </main>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
