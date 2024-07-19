@@ -13,6 +13,8 @@ function checkEmail(event) {
       invalidMsg("Please provide a valid email address"),
       button
     );
+  }else {
+    input.value = ""
   }
 }
 
