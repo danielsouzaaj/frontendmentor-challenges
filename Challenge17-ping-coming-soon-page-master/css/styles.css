@@ -177,6 +177,7 @@ input {
 
   .btn {
     padding: 0 56px;
+    margin-top: 0;
   }
 
   .invalid-text {
