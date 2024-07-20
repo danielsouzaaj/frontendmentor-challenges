@@ -1,0 +1,141 @@
+:root {
+
+    --clr-desaturated-red: hsl(0, 36%, 70%);
+    --clr-soft-red: hsl(0, 93%, 68%);
+    --clr-dark-grayish-red: hsl(0, 6%, 24%);
+
+    --gradient-linear-01: linear-gradient( 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --gradient-linear-02: linear-gradient( 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+    --ff-default: "Josefin Sans", sans-serif;
+
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+}
+
+body {
+    background-image: var(--gradient-linear-01);
+    font-family: var(--ff-default);
+    font-size: 14px;
+    font-weight: var(--fw-400);
+    color: var(--clr-dark-grayish-red);
+    overflow: hidden;
+}
+
+/* Text styles */
+
+.title {
+    text-transform: uppercase;
+    font-size: 44px;
+    font-weight: var(--fw-600);
+    letter-spacing: 10px;
+    line-height: 1.0;
+    margin-bottom: 1rem;
+}
+
+.title-light {
+    font-weight: var(--fw-300);
+    color: var(--clr-desaturated-red);
+}
+
+.about {
+    color: var(--clr-desaturated-red);
+    margin-bottom: 24px;
+}
+
+/* General styles */
+
+.wrapper {
+    max-width: 375px;
+}
+
+.header {
+    padding: 32px;
+}
+
+.logo {
+    max-width: 128px;
+}
+
+.content {
+    padding: 64px 32px;
+    text-align: center;
+}
+
+form {
+    position: relative;
+}
+
+#email {
+    border: 1px solid var(--clr-desaturated-red);
+    color: var(--clr-dark-grayish-red);
+    padding: 12px 24px;
+    border-radius: 32px;
+    min-width: 100%;
+}
+
+#email::placeholder {
+    color: var(--clr-desaturated-red);
+}
+
+.btn {
+    display: block;
+    background-image: var(--gradient-linear-02);
+    padding: 13px 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    border-radius: 32px;
+    box-shadow: rgba(249, 98, 98, 0.536) 0px 8px 24px;
+}
+
+.desk {
+    display: none;
+}
+ 
+@media (min-width: 1280px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .title {
+        text-transform: uppercase;
+        font-size: 72px;
+        font-weight: var(--fw-600);
+        letter-spacing: 10px;
+        line-height: 1.0;
+        margin-bottom: 1rem;
+    }
+
+    .wrapper {
+        max-width: 100%;
+        min-height: 100vh;
+        display: flex;
+        padding-left: 40px;
+    }
+
+    .header {
+        padding-left: 148px;
+    }
+
+    .content {
+        min-height: 100%;
+        padding: 0;
+        max-width: 46%;
+        text-align: left;
+        padding-left: 148px;
+    }
+
+    .img-hero {
+        display: none;
+    }
+    
+    .desk {
+        display: block;
+        min-width: 37.6%;
+        /* min-width: 562px; */
+    }
+}
