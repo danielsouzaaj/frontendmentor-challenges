@@ -3,35 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body>
-  <!-- Rating state start -->
+  <main class="wrapper">
+    <!-- Rating state start -->
+    <div class="rating-state">
 
-  How did we do?
+      <div class="icon">
+        <img src="./images/icon-star.svg" alt="star icon">
+      </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <h2 class="title">How did we do?</h2>
+    
+      <p class="about">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+      
+      <form>
+        <ul>
+          <li><button class="btn">1</button></li>
+          <li><button class="btn">2</button></li>
+          <li><button class="btn">3</button></li>
+          <li><button class="btn">4</button></li>
+          <li><button class="btn">5</button></li>
+        </ul>
+      
+        <button class="btn-submit" type="submit">Submit</button>
+      </form>
+    </div>
+    <!-- Rating state end -->
+  
+    <!-- Thank you state start -->
+    <div class="thanks-state">
 
-  1 2 3 4 5
+      <div class="illustration">
+        <img src="./images/illustration-thank-you.svg" alt="ilustração">
+      </div>
 
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
+      <span class="result">You selected <!-- Add rating here --> out of 5</span>
+    
+      <h2 class="title">Thank you!</h2>
+    
+      <p class="about">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+    </div>
+    <!-- Thank you state end -->
+  </main>
    <script src="./script.js"></script>
 </body>
 </html>
