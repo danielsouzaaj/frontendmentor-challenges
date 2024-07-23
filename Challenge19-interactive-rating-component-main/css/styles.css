@@ -1,0 +1,141 @@
+:root {
+    --clr-orange: hsl(25, 97%, 53%);
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-light-grey: hsl(217, 12%, 63%);
+    --clr-dark-blue: hsl(213, 19%, 18%);
+    --clr-light-blue: hsl(213, 20%, 22%);
+    --clr-very-dark-blue: hsl(216, 12%, 8%);
+
+    --ff-default: "Overpass", sans-serif;
+
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+body {
+    background-color: var(--clr-very-dark-blue);
+    font-family: var(--ff-default);
+    font-weight: var(--fw-400);
+    font-size: 14px;
+    color: var(--clr-light-grey);
+}
+
+/* Text styles */
+
+.title {
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-White);
+    line-height: 1.0;
+    margin: 1.5rem 0 1rem;
+}
+
+.about {
+    margin-bottom: 1rem;
+}
+
+.thanks-state .title {
+    margin: 2.25rem 0 1rem;
+}
+
+.thanks-state .about {
+    margin-bottom: 0;
+}
+
+/* General styles */
+
+.wrapper {
+    min-height: 100vh;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-state,
+.thanks-state {
+    max-width: 375px;
+    background-color: var(--clr-dark-blue);
+    border-radius: 1rem;
+    padding: 1.6rem;
+}
+
+.rating-state .icon {
+    background-color: var(--clr-light-blue);
+    border-radius: 50%;
+    width: 2.375rem;
+    height: 2.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-state .rating-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.rating-state .btn {
+    background-color: var(--clr-light-blue);
+    border: none;
+    border-radius: 50%;
+    color: var(--clr-light-grey);
+    cursor: pointer;
+    outline: none;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding-top: 0.2rem;
+    transition: 0.4s;
+}
+
+.rating-state .btn:hover {
+    background-color: var(--clr-orange);
+    color: var(--clr-very-dark-blue);
+}
+
+.rating-state .btn:focus {
+    background-color: var(--clr-White);
+    color: var(--clr-very-dark-blue);
+}
+
+.rating-state .btn-submit {
+    background-color: var(--clr-orange);
+    border: none;
+    border-radius: 2rem;
+    color: var(--clr-very-dark-blue);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 100%;
+    padding: 0.7rem 0 0.5rem;
+    transition: 0.4s;
+    outline: none;
+}
+
+.rating-state .btn-submit:hover,
+.rating-state .btn-submit:focus {
+    background-color: var(--clr-White);
+}
+
+.thanks-state {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.thanks-state .illustration {
+    max-width: 132px;
+    margin-bottom: 1.5rem;
+}
+
+.thanks-state .rating {
+    background-color: var(--clr-light-blue);
+    border-radius: 2rem;
+    padding: 0.2rem 0.6rem 0;
+    color: var(--clr-orange);
+}
