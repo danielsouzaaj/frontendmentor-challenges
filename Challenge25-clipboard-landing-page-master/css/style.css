@@ -327,3 +327,9 @@ section {
         cursor: pointer;
     }
 }
+
+@media (min-width: 1440px) {
+    .header {
+        background-size: cover;
+    }
+}
