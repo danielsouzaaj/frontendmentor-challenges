@@ -1,134 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>Frontend Mentor | Fylo landing page with two column layout</title>
-</head>
-<body>
-  <header class="header">
-    <div class="header-logo">
-      <img src="./images/logo.svg" alt="Logo fylo">
-    </div>
-
-    <nav>
-      <ul class="nav-list">
-        <li class="nav-list-item">Features</li>
-        <li class="nav-list-item">Team</li>
-        <li class="nav-list-item">Sign In</li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="wrapper">
-    <section class="hero">
-      <div class="hero-image">
-        <img src="./images/illustration-1.svg" alt="Illustration">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <div class="header-logo">
+        <img src="./images/logo.svg" alt="fylo logo" />
       </div>
 
-      <div class="hero-content">
-        <h1 class="headline">All your files in one secure location, accessible anywhere.</h1>
+      <nav>
+        <ul class="nav-list flex">
+          <li class="nav-list-item"><a href="#">Features</a></li>
+          <li class="nav-list-item"><a href="#">Team</a></li>
+          <li class="nav-list-item"><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <p class="description">
-          Fylo stores your most important files in one secure location. 
-          Access them wherever you need, share and collaborate with friends, 
-          family, and co-workers.
-        </p>
+    <main>
+      <section class="hero flex">
+        <div class="hero-content">
+          <h1 class="section-title">
+            All your files in one secure location, accessible anywhere.
+          </h1>
 
-        <form>
-          <input type="email" name="email" id="email" placeholder="Enter your email..">
-          <button type="submit">Get Started</button>
-        </form>
-      </div>
-    </section>
-
-    <section class="about">
-      <div class="bg-color">
-        <div class="about-image">
-          <img src="./images/illustration-2.svg" alt="Illustration">
-        </div>
-  
-        <div class="about-content">
-          <h2 class="about-title">Stay productive, wherever you are</h2>
-  
-          <p class="about-desc">  
-            Never let location be an issue when accessing your files. Fylo has you 
-            covered for all of your file storage needs.
-            <br><br>
-            Securely share files and folders with friends, family and colleagues for 
-            live collaboration. No email attachments required!
+          <p class="description">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
           </p>
-  
-          <span class="about-link">
-            <a href="#">See how Fylo works</a>
-          </span>
-          
-          <div class="card">
-            <p class="card-text">
-              Fylo has improved our team productivity by an order of magnitude. Since 
-              making the switch our team has become a well-oiled collaboration machine.
+
+          <form class="hero-form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email.."
+            />
+            <button type="submit">Get Started</button>
+          </form>
+        </div>
+
+        <div class="hero-image">
+          <img src="./images/illustration-1.svg" aria-hidden="true" />
+        </div>
+      </section>
+
+      <div class="bg-features">
+        <section class="features flex">
+          <div class="features-content">
+            <h2 class="section-title">Stay productive, wherever you are</h2>
+
+            <p class="description">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
             </p>
-  
-            <div class="card-user">
-              <div class="user-image">
-                <img src="./images/avatar-testimonial.jpg" alt="">
-              </div>
-  
-              <div class="user-info">
-                <h4 class="user-info-name">Kyle Burton</h4>
-                <p class="user-info-stats">Founder & CEO, Huddle</p>
+
+            <p class="description">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+
+            <a href="#" class="features-link flex">
+              See how Fylo works
+              <img src="./images/icon-arrow.svg" aria-hidden="true" />
+            </a>
+
+            <div class="card">
+              <p class="card-text">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </p>
+
+              <div class="card-user flex">
+                <div class="user-image">
+                  <img src="./images/avatar-testimonial.jpg" alt="" />
+                </div>
+
+                <div class="user-info">
+                  <h4 class="user-info-name">Kyle Burton</h4>
+                  <p class="user-info-stats">Founder & CEO, Huddle</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+
+          <div class="about-image">
+            <img src="./images/illustration-2.svg" alt="Illustration" />
+          </div>
+        </section>
       </div>
-    </section>
 
-    <section class="call">
-        <h2 class="call-title">Get early access today</h2>
+      <section class="call-to-action">
+        <div class="cta-section">
+          <h2 class="section-title">Get early access today</h2>
 
-        <p class="call-desc">
-          It only takes a minute to sign up and our free starter tier is extremely generous. 
-          If you have any questions, our support team would be happy to help you.
-        </p>
+          <p class="description">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
 
-        <form>
-          <input type="email" name="email" id="email" placeholder="email@exemple.com">
+        <form class="cta-form">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@exemple.com"
+          />
           <button type="submit">Get Started For Free</button>
         </form>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="footer">
-    <div class="footer-logo">
-      <img src="./images/logo.svg" alt="Logo fylo">
-    </div>
+    <footer class="footer flex">
+      <div class="footer-logo">
+        <img src="./images/logo.svg" alt="Logo fylo" />
+      </div>
 
-    <nav>
-      <ul class="nav-list">
-        <li class="nav-list-item phone">Phone: +1-543-123-4567</li>
-        <li class="nav-list-item email">example@fylo.com</li>
-      </ul>
+      <div class="footer-col">
+        <div class="contact-info flex">
+          <img src="./images/icon-phone.svg" aria-hidden="true" />
+          <p>Phone: +1-543-123-4567</p>
+        </div>
 
-      <ul class="nav-list">
-        <li class="nav-list-item">About Us</li>
-        <li class="nav-list-item">Jobs</li>
-        <li class="nav-list-item">Press</li>
-        <li class="nav-list-item">Blog</li>
-      </ul>
+        <div class="contact-info flex">
+          <img src="./images/icon-email.svg" aria-hidden="true" />
+          <p>example@fylo.com</p>
+        </div>
+      </div>
 
-      <ul class="nav-list">
-        <li class="nav-list-item">Contact Us</li>
-        <li class="nav-list-item">Terms</li>
-        <li class="nav-list-item">Privacy</li>
-      </ul>
-    </nav>
-  </footer>
-</body>
+      <div class="footer-col">
+        <nav>
+          <ul class="footer-nav">
+            <li class="footer-nav-item">About Us</li>
+            <li class="footer-nav-item">Jobs</li>
+            <li class="footer-nav-item">Press</li>
+            <li class="footer-nav-item">Blog</li>
+          </ul>
+
+          <ul class="footer-nav">
+            <li class="footer-nav-item">Contact Us</li>
+            <li class="footer-nav-item">Terms</li>
+            <li class="footer-nav-item">Privacy</li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
