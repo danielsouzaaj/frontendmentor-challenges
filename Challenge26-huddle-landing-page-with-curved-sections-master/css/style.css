@@ -240,8 +240,23 @@ header {
         text-align: left;
     }
 
+    .grow .section-title,
+    .flowing .section-title,
+    .users .section-title {
+        font-size: 1.5rem;
+    }
+
+    .cta .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
     body {
         font-size: 1rem;
+    }
+
+    .body-btn {
+        padding: 1rem 4.5rem;
     }
 
     .header-logo {
@@ -304,6 +319,28 @@ header {
 }
 
 @media (min-width: 1280px) {
+
+    header {
+        padding: 4rem 6rem;
+    }
+
+    .header-logo {
+        max-width: 200px;
+    }
+
+    .header-btn {
+        font-size: 0.75rem;
+    }
+
+    .hero .section-title {
+        font-size: 2.25rem;
+    }
+
+    .grow .section-title,
+    .flowing .section-title,
+    .users .section-title {
+        font-size: 2rem;
+    }
 
     .hero {
         max-width: 1024px;
