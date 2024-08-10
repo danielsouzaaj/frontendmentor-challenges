@@ -1,0 +1,355 @@
+:root {
+    --clr-pink: hsl(322, 100%, 66%);
+    --clr-light-pink: hsl(321, 100%, 78%);
+    --clr-light-red: hsl(0, 100%, 63%);
+    --clr-very-dark-cyan: hsl(192, 100%, 9%);
+    --clr-very-pale-blue: hsl(207, 100%, 98%);
+
+    --ff-default: "Open Sans", sans-serif;
+    --ff-headings: "Poppins", sans-serif;
+
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+body {
+    font-size: 0.875rem;
+    font-family: var(--ff-default);
+    font-weight: var(--fw-400);
+    color: var(--clr-very-dark-cyan);
+}
+
+/* Helper classes */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Text styles */
+
+section {
+    text-align: center;
+}
+
+.section-title {
+    font-family: var(--ff-headings);
+    font-weight: var(--fw-700);
+}
+
+.header-btn {
+    font-size: 0.675rem;
+    font-weight: var(--fw-600);
+    text-transform: capitalize;
+    color: var(--clr-pink);
+}
+
+.hero .section-title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.hero .paragraph {
+    margin: 1rem 0 2rem;
+}
+
+.hero-stats h2 {
+    font-size: 4rem;
+}
+
+.hero-stats-desc {
+    font-weight: var(--fw-600);
+}
+
+.body-btn {
+    font-weight: var(--fw-600);
+    color: var(--clr-very-pale-blue);
+}
+
+.grow .section-title,
+.flowing .section-title,
+.users .section-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.cta .section-title {
+    font-size: 1.625rem;
+    margin-bottom: 2rem;
+}
+
+.newsletter-title {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.newsletter-paragraph {
+    margin: 1rem 0;
+}
+
+.newsletter-btn {   
+    font-size: 0.875rem;
+    font-weight: var(--fw-600);
+    color: var(--clr-very-pale-blue);
+}
+
+.footer-section .paragraph {
+    margin: 1rem 0;
+}
+
+/* General styles */
+
+header {
+    padding: 1.75rem 1.5rem;
+    justify-content: space-between;
+}
+
+.header-logo {
+    max-width: 100px;
+}
+
+.header-btn {
+    background-color: transparent;
+    padding: 0.25rem 1.25rem;
+    border: 1px solid var(--clr-pink);
+    border-radius: 3rem;
+}
+
+.hero {
+    padding: 6rem 2rem 3rem;
+    text-align: center;
+}
+
+.hero-container,
+.hero-content {
+    margin-bottom: 6rem;
+}
+
+.body-btn {
+    background-color: var(--clr-pink);
+    padding: 0.625rem 2.5rem;
+    border: none;
+    border-radius: 3rem;
+}
+
+.hero-stats {
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.communities::before {
+    content: '';
+    background-image: url(../images/icon-communities.svg);
+    background-repeat: no-repeat;
+    display: block;
+    width: 47px;
+    height: 41px;
+}
+
+.messages::before {
+    content: '';
+    background-image: url(../images/icon-messages.svg);
+    background-repeat: no-repeat;
+    display: block;
+    width: 48px;
+    height: 40px;
+}
+
+.bg-top img,
+.bg-bottom img {
+    min-width: 100%;
+}
+
+.grow-content {
+    background-color: var(--clr-very-pale-blue);
+    padding: 6rem 2rem 3rem;
+}
+
+.flowing-content {
+    padding: 6rem 2rem;
+}
+
+.users-content {
+    background-color: var(--clr-very-pale-blue);
+    padding: 3rem 2rem 6rem;
+}
+
+.grow-content,
+.flowing-content,
+.users-content {
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.grow-content img,
+.flowing-content img,
+.users-content img {
+    max-width: 90%;
+}
+
+.cta {
+    padding: 3rem 2rem 6rem;
+    text-align: center;
+}
+
+.footer-content {
+    background-color: var(--clr-very-dark-cyan);
+    color: var(--clr-very-pale-blue);
+    padding: 2rem;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 6rem;
+}
+
+.newsletter-form {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.75rem;
+}
+
+.newsletter-input {
+    min-width: 100%;
+    padding: 0.625rem;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.newsletter-btn {
+    background-color: var(--clr-pink);
+    padding: 0.625rem 2.5rem 0.625rem;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.footer-logo {
+    max-width: 200px;
+}
+
+.contact-container {
+    gap: 1rem;
+}
+
+.contact-container:first-of-type {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+
+    section {
+        text-align: left;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    .header-logo {
+        max-width: 160px;
+    }
+
+    .header-btn {
+        padding: 0.25rem 1.25rem;
+        border-radius: 3rem;
+    }
+
+    .hero {
+        padding: 6rem 8rem 3rem;
+    }
+
+    .hero-stats {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .grow-content,
+    .users-content {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+    .flowing-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .grow-content img,
+    .flowing-content img,
+    .users-content img {
+        max-width: 40%;
+    }
+
+    .cta {
+        padding: 6rem 2rem;
+        text-align: center;
+    }
+
+    .footer-content {
+        padding: 4rem 2rem;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .newsletter-form {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 1.5rem;
+    }
+
+    .newsletter-input {
+        min-width: calc(100% - 10.625rem);
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .hero {
+        max-width: 1024px;
+        padding: 6rem 8rem 3rem;
+        margin: 0 auto;
+    }
+
+    .hero-content .paragraph {
+        max-width: 65%;
+        margin: 1rem auto 2rem;
+    }
+
+    .grow-content {
+        background-color: var(--clr-very-pale-blue);
+        padding: 6rem 6rem 3rem;
+    }
+    
+    .flowing-content {
+        padding: 6rem 6rem;
+    }
+    
+    .users-content {
+        background-color: var(--clr-very-pale-blue);
+        padding: 3rem 6rem 6rem;
+    }
+
+    .grow-content-text,
+    .flowing-content-text,
+    .users-content-text {
+        max-width: 44%;
+    }
+
+    .footer-content {
+        padding: 4rem 6rem;
+    }
+
+    .footer-section {
+        max-width: 34%;
+    }
+
+
+    .footer-newsletter {
+        min-width: 48%;
+    }
+
+    .newsletter-paragraph {
+        max-width: 390px;
+    }
+}
