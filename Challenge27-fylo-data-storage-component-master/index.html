@@ -4,16 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <title>Frontend Mentor | Fylo data storage component</title>
 </head>
-<body>
-  You’ve used 815 GB of your storage
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
+<body>
+  <div class="container">
+    <main class="card">
+      <section class="navigation">
+        <img src="./images/logo.svg" alt="fylo logo">
+      
+        <nav class="navigation-bar">
+          <button class="nav-item" name="document">
+            <img src="./images/icon-document.svg" alt="document icon">
+          </button>
+
+          <button class="nav-item" name="folder">
+            <img src="./images/icon-folder.svg" alt="folder icon">
+          </button>
+
+          <button class="nav-item" name="upload">
+            <img src="./images/icon-upload.svg" alt="upload icon">
+          </button>
+        </nav>
+      </section>
+
+      <div class="details-wrapper">
+        <div class="details-remaining">
+          <span>185</span> GB Left
+        </div>
+
+        <section class="details-container">
+          <p>You’ve used <b>815 GB</b> of your storage</p>
+          <div class="rage-indicator-container">
+            <div class="range-indicator">
+              <div class="range-point"></div>
+            </div>
+          </div>
+          <div class="details-range">
+            <span>0 GB</span>
+            <span>1000 GB</span>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
