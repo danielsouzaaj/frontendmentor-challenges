@@ -371,4 +371,24 @@ body {
     .services .card-icon {
         margin: 0 0 1.5rem;
     }
+
+    .cta {
+        margin-bottom: 9.25rem;
+    }
+
+    .cta .container {
+        background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+        padding: 4.875rem 5rem 4.75rem;
+    }
+
+    .cta-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cta .headline {
+        font-size: 3rem;
+        text-align: left;
+        max-width: 43%;
+    }
 }
