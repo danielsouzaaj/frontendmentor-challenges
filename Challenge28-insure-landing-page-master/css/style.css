@@ -200,6 +200,41 @@ body {
     margin-bottom: 1rem;
 }
 
+.cta {
+    margin-bottom: 8.75rem;
+}
+
+.cta .container {
+    background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: var(--clr-dark-violet);
+    padding: 4.5rem 2.75rem;
+}
+
+.cta-content {
+    flex-direction: column;
+    row-gap: 2.75rem;
+}
+
+.cta .headline {
+    color: var(--clr-very-light-gray);
+    font-size: 2.75rem;
+    line-height: 1.0;
+}
+
+.cta-btn {
+    background-color: transparent;
+    border: 2px solid var(--clr-very-light-gray);
+    padding: 0.875rem 1.375rem;
+    line-height: 1.0;
+    color: var(--clr-very-light-gray);
+    text-transform: uppercase;
+    font-weight: var(--fw-700);
+    cursor: pointer;
+}
+
+
 @media (min-width: 768px) {
 
     .container {
