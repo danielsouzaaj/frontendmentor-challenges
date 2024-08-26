@@ -304,4 +304,36 @@ body {
         top: -13%;
         right: 0;
     }
+
+    .services .container {
+        padding: 17rem 1.5rem 4.375rem;
+    }
+
+    .services .container::before {
+        margin: 0 0 2.25rem;
+    }
+
+    .services .headline {
+        font-size: 4.375rem;
+        text-align: left;
+    }
+
+    .services .card-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .services .card {
+        max-width: 21.75rem;
+        flex: 1;
+    }
+
+    .services .card,
+    .services .card .headline {
+        text-align: left;
+    }
+
+    .services .card-icon {
+        margin: 0 0 1.5rem;
+    }
 }
