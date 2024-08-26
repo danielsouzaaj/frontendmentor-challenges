@@ -11,66 +11,62 @@
   <link rel="stylesheet" href="./css/style.css" />
   <title>Frontend Mentor | Insure landing page</title>
 </head>
+
 <body>
+  <header class="header">
+    <div class="container flex">
+      <img class="header-logo" src="./images/logo.svg" alt="logo">
+      
+      <button class="nav-mobile-btn"><img  class="nav-mobile-icon" src="./images/icon-hamburger.svg" alt="nav icon"></button>
+
+      <nav class="nav-mobile">
+        <ul class="nav-list flex">
+          <li><a class="nav-link" href="#">How we work</a></li>
+          <li><a class="nav-link" href="#">Blog</a></li>
+          <li><a class="nav-link" href="#">Account</a></li>
+        </ul>
+
+        <button class="nav-btn">View plans</button>
+      </nav>
+
+      <nav class="nav-desktop flex">
+        <ul class="nav-list flex">
+          <li><a class="nav-link" href="#">How we work</a></li>
+          <li><a class="nav-link" href="#">Blog</a></li>
+          <li><a class="nav-link" href="#">Account</a></li>
+        </ul>
+
+        <button class="nav-btn">View plans</button>
+      </nav>
+    </div>
+  </header>
   <main>
-    <header class="header">
+    <section class="hero">      
       <div class="container flex">
-        <img class="header-logo" src="./images/logo.svg" alt="logo">
-        
-        <button class="nav-mobile-btn"><img  class="nav-mobile-icon" src="./images/icon-hamburger.svg" alt="nav icon"></button>
+        <div class="hero-content">
+          <h1 class="headline">Humanizing your insurance.</h1>
 
-        <nav class="nav-mobile">
-          <ul class="nav-list flex">
-            <li><a class="nav-link" href="#">How we work</a></li>
-            <li><a class="nav-link" href="#">Blog</a></li>
-            <li><a class="nav-link" href="#">Account</a></li>
-          </ul>
+          <p class="desc">
+            Get your life insurance coverage easier and faster. We blend our expertise 
+            and technology to help you find the plan that’s right for you. Ensure you 
+            and your loved ones are protected.
+          </p>
 
-          <button class="nav-btn">View plans</button>
-        </nav>
+          <button>View plans</button>
+          <img class="image-mobile-right" src="./images/bg-pattern-intro-right-mobile.svg" aria-hidden="true">
+        </div>
 
-        <nav class="nav-desktop flex">
-          <ul class="nav-list flex">
-            <li><a class="nav-link" href="#">How we work</a></li>
-            <li><a class="nav-link" href="#">Blog</a></li>
-            <li><a class="nav-link" href="#">Account</a></li>
-          </ul>
-
-          <button class="nav-btn">View plans</button>
-        </nav>
+        <picture>
+          <source srcset="./images/image-intro-desktop.jpg"  media="(min-width: 768px)" />
+          <img src="./images/image-intro-mobile.jpg" aria-hidden="true" />
+        </picture>
       </div>
-    </header>
+      <picture class="image-desktop-right">
+        <source srcset="./images/bg-pattern-intro-right-desktop.svg"  media="(min-width: 768px)" />
+      </picture>
+    </section>
   </main>
   <!--
-  How we work
-  Blog
-  Account
-  View plans
-
-  Humanizing your insurance.
-
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
-
-  View plans
-
-  We’re different
-
-  Snappy Process
-
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
-
-  Affordable Prices
-
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
-
-  People First
-
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
 
   Find out more about how we work
 
