@@ -163,6 +163,43 @@ body {
     display: none;
 }
 
+.services .container {
+    padding: 8.75rem 1.5rem;
+}
+
+.services .headline {
+    color: var(--clr-very-dark-violet);
+    font-size: 3rem;
+}
+
+.services .container::before {
+    content: '';
+    background-color: var(--clr-dark-grayish-violet);
+    display: block;
+    width: 152px;
+    height: 1px;
+    margin: 0 auto 2.25rem;
+}
+
+.services .card-container {
+    padding: 5.25rem 0;
+    flex-direction: column;
+    row-gap: 3.5rem;
+}
+
+.services .card {
+    text-align: center;
+}
+
+.services .card-icon {
+    margin: 0 auto 1.5rem;
+}
+
+.services .card .headline {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
 @media (min-width: 768px) {
 
     .container {
