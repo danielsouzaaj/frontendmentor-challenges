@@ -212,7 +212,7 @@ body {
     padding: 4.5rem 2.75rem;
 }
 
-.cta-content .flex{
+.cta-content {
     flex-direction: column;
     row-gap: 2.75rem;
 }
@@ -381,7 +381,7 @@ body {
         padding: 4.875rem 5rem 4.75rem;
     }
 
-    .cta-content .flex {
+    .cta-content {
         flex-direction: row;
         justify-content: space-between;
     }
