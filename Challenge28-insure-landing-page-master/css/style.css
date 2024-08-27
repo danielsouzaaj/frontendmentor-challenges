@@ -436,4 +436,32 @@ body {
         text-align: left;
         max-width: 43%;
     }
+
+    .footer {
+        background-image: url(../images/bg-pattern-footer-desktop.svg);
+    }
+
+    .footer .container {
+        padding: 4.25rem 1.5rem;
+    }
+
+    .footer .header {
+        padding-bottom: 2.25rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-nav {
+        text-align: left;
+    }
+
+    .footer-nav.flex {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .footer-nav .nav-list.flex {
+        align-items: flex-start;
+    }
 }
