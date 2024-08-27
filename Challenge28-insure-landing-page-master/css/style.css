@@ -234,6 +234,51 @@ body {
     cursor: pointer;
 }
 
+.footer {
+    background-image: url(../images/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+}
+
+.footer .container {
+    padding: 5.5rem 1.5rem;
+}
+
+.footer .header {
+    background-color: transparent;
+    border-bottom: 1px solid var(--clr-dark-grayish-violet);
+    padding-bottom: 2.5rem;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.footer .social-links {
+    gap: 1rem;
+}
+
+.footer-nav {
+    padding-top: 2.75rem;
+    text-align: center;
+
+    flex-direction: column;
+    row-gap: 2.875rem;
+}
+
+.footer-nav .list-headline {
+    text-transform: uppercase;
+    color: var(--clr-dark-grayish-violet);
+    margin-bottom: 2.625rem;
+}
+
+.footer-nav .nav-list {
+    flex-direction: column;
+    row-gap: 1.375rem;
+}
+
+.footer-nav .nav-link {
+    color: var(--clr-very-dark-violet);
+}
+
+
 
 @media (min-width: 768px) {
 
