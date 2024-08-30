@@ -133,3 +133,44 @@ a.login {
 .close {
     display: none;
 }
+
+.nav-desktop {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+
+    .wrapper::before {
+        height: 60%;
+    }
+
+    .container {
+        max-width: 69.375rem;
+    }
+
+    .header .container {
+        padding: 4rem 0;
+    }
+
+    .logo {
+        width: 2rem;
+    }
+
+    .nav-mobile,
+    .nav-mobile-icon {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: flex;
+        column-gap: 2.625rem;
+    }
+
+    .nav-desktop span {
+        color: var(--clr-grayish-blue);
+    }
+
+    .nav-desktop a:hover {
+        text-decoration: underline;
+    }
+}
