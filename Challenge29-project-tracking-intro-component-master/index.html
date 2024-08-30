@@ -4,23 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Barlow:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <title>Frontend Mentor | Project tracking intro component</title>
 </head>
 <body>
-  Product
-  Features
-  Pricing
-  Login
-
-  New
-  Monograph Dashboard
-
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
-
-  Schedule a demo
-  to see a live preview
+  <main class="wrapper">
+    <header class="header">
+      <div class="container flex">
+        <img class="logo" src="./images/logo.svg" alt="logo" />
+        
+        <button class="nav-mobile-icon">
+          <img class="nav-mobile-image" src="./images/icon-hamburger.svg" alt="menu mobile icon" />
+        </button>
+        
+        <nav class="nav-mobile ff-two close">
+          <a href="#">Product</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <div class="login-container">
+            <a class="login" href="#">Login</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </main>
+  <script src="./index.js"></script>
 </body>
 </html>

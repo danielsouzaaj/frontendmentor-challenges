@@ -1,0 +1,135 @@
+:root {
+    --clr-red: hsl(0, 100%, 68%);
+    --clr-very-dark-blue: hsl(230, 29%, 20%);
+    --clr-dark-grayish-blue: hsl(230, 11%, 40%);
+    --clr-grayish-blue: hsl(231, 7%, 65%);
+    --clr-light-grayish-blue: hsl(207, 33%, 95%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    --ff-primary: "Barlow", sans-serif;
+    --ff-secundary: "Barlow Condensed", sans-serif;
+
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-size: 1.125rem;
+    font-weight: var(--fw-400);
+    color: var(--clr-dark-grayish-blue);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Helper class*/
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/*Text styles*/
+
+.ff-two {
+    font-family: var(--ff-secundary);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    line-height: 1.0;
+    letter-spacing: 1px;
+}
+
+.header a {
+    color: var(--clr-very-dark-blue);
+    text-align: center;
+}
+
+a.login {
+    color: var(--clr-grayish-blue);
+}
+
+.category {
+    color: var(--clr-dark-grayish-blue);
+    font-weight: var(--fw-400);
+}
+
+.headline {
+    color: var(--clr-very-dark-blue);
+    font-family: var(--ff-secundary);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: var(--fw-700);
+    line-height: 1;
+}
+
+.desc {
+    max-width: 90%;
+    margin: 1.75rem 0;
+}
+
+.preview {
+    text-decoration: none;
+    color: var(--clr-dark-grayish-blue);
+    font-weight: var(--fw-400);
+}
+
+/*General styles*/
+
+.wrapper::before {
+    content: '';
+    position: absolute;
+    background-color: var(--clr-light-grayish-blue);
+    border-radius: 0 0 0 4rem;
+    left: 50%;
+    width: 50%;
+    height: 85%;
+    z-index: -1;
+}
+
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+
+.header .container {
+    padding: 2.25rem 2rem;
+    position: relative;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 1.625rem;
+}
+
+.nav-mobile-icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-mobile {
+    background-color: var(--clr-white);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1.75rem 0;
+    position: absolute;
+    top: 100%;
+    left: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.login-container {
+    border-top: 1px solid var(--clr-grayish-blue);
+    padding-top: 1.75rem;
+    text-align: center;
+}
+
+.close {
+    display: none;
+}
