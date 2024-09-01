@@ -129,3 +129,76 @@ a {
     font-size: 19px;
     color: var(--clr-dark-gray);
 }
+
+.creations-content {
+    padding: 72px 0 122px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.creations .headline {
+    font-size: 2.5rem;
+    color: var(--clr-black);
+    text-align: center;
+}
+
+.creations-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: 152px;
+    padding: 26px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.creations-item .headline {
+    font-size: 1.75rem;
+    max-width: 160px;
+    color: var(--clr-white);
+    text-align: left;
+}
+
+.deep-earth {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/mobile/image-deep-earth.jpg);
+}
+
+.night-arcade {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/mobile/image-night-arcade.jpg);
+}
+
+.soccer-team {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/mobile/image-soccer-team.jpg);
+}
+
+.the-grid {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/mobile/image-grid.jpg);
+}
+
+.from-up {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/mobile/image-from-above.jpg);
+}
+
+.pocket {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/mobile/image-pocket-borealis.jpg);
+}
+
+.the-curiosity {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/mobile/image-curiosity.jpg);
+}
+
+.make-it {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/mobile/image-fisheye.jpg);
+}
+
+.creations-btn {
+    background-color: transparent;
+    border: 2px solid var(--clr-black);
+    padding: 16px 46px;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    color: var(--clr-black);
+    text-align: center;
+}
