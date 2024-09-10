@@ -238,3 +238,37 @@ a {
     color: var(--clr-very-dark-gray);
     font-size: 1.125rem;
 }
+
+@media (min-width: 900px) {
+
+    .container {
+        max-width: 1110px;
+    }
+
+    .bg-hero {
+        background-image: url(../images/desktop/image-hero.jpg);
+        background-size: contain;
+    }
+
+    .header {
+        padding: 4rem 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .nav-desktop .nav-list {
+        display: flex;
+        align-items: center;
+        column-gap: 2.25rem;
+    }
+
+    .nav-desktop a {
+        color: var(--clr-white);
+    }
+}
