@@ -31,7 +31,7 @@
               <li><a href="#">Support</a></li>
             </ul>
           </nav>
-          
+
           <nav class="nav-desktop">
             <ul class="nav-list">
               <li><a href="#">About</a></li>
@@ -57,7 +57,10 @@
 
     <section class="about">
       <div class="container">
-        <img src="./images/mobile/image-interactive.jpg" aria-hidden="true" />
+        <picture>
+          <source srcset="./images/desktop/image-interactive.jpg" media="(min-width: 900px)" />
+          <img src="./images/mobile/image-interactive.jpg" aria-hidden="true" />
+        </picture>
 
         <div class="about-content">
           <h2 class="headline">

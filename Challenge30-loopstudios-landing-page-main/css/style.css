@@ -247,6 +247,7 @@ a {
 
     .container {
         max-width: 1110px;
+        padding: 0;
     }
 
     .bg-hero {
@@ -291,5 +292,26 @@ a {
     
     .hero .headline {
         font-size: 4rem;
+    }
+
+    .about .container {
+        position: relative;
+    }
+
+    .about-content {
+        background-color: var(--clr-white);
+        max-width: 544px;
+        margin-top: 0;
+        padding: 98px 0 0 98px;
+        text-align: left;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .about-content p {
+        margin-top: 40px;
+        font-size: 15px;
+        color: var(--clr-dark-gray);
     }
 }
