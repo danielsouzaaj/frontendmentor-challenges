@@ -58,6 +58,10 @@ a {
     border: none;
 }
 
+.nav-desktop {
+    display: none;
+}
+
 .nav-mobile {
     background-color: var(--clr-black);
     display: none;
@@ -262,6 +266,10 @@ a {
         display: none;
     }
 
+    .nav-desktop {
+        display: block;
+    }
+
     .nav-desktop .nav-list {
         display: flex;
         align-items: center;
@@ -270,5 +278,18 @@ a {
 
     .nav-desktop a {
         color: var(--clr-white);
+    }
+    
+    .hero {
+        padding: 4rem 0;
+   }
+    
+    .hero .headline-container {
+        max-width: 620px;
+        padding: 2.625rem 3rem;
+    }
+    
+    .hero .headline {
+        font-size: 4rem;
     }
 }
