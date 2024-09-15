@@ -14,7 +14,7 @@ body {
     background-color: var(--clr-very-light-grayish-blue);
     color: var(--clr-grayish-blue);
     font-family: var(--ff-default);
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: var(--fw-700);
 }
 
@@ -24,20 +24,20 @@ body {
 }
 
 .toggle-container {
-    margin: 48px 0 80px;
+    margin: 3rem 0 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 24px;
+    column-gap: 1.5rem;
 }
 
 .switch {
     border-radius: 1rem;
     display: inline-block;
     position: relative;
-    width: 56px;
-    height: 32px;
-    padding: 4px;
+    width: 3.5rem;
+    height: 2rem;
+    padding: 0.25rem;
 }
 
 .switch input {
@@ -63,11 +63,11 @@ body {
 .slider:before {
     content: "";
     position: absolute;
-    height: 24px;
-    width: 24px;
+    height: 1.5rem;
+    width: 1.5rem;
     border-radius: 50%;
-    left: 4px;
-    bottom: 4px;
+    left: 0.25rem;
+    bottom: 0.25rem;
     background-color: var(--clr-very-light-grayish-blue);
     -webkit-transition: .4s;
     transition: .4s;
@@ -88,8 +88,8 @@ input:checked + .slider:before {
 .plan {
     background-color: var(--clr-very-light-grayish-blue);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    border-radius: 10px;
-    padding: 30px 28px;
+    border-radius: 0.625rem;
+    padding: 1.875rem 1.75rem;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
@@ -111,7 +111,7 @@ ul {
 .plan-item {
     border-top: 1px solid var(--clr-light-grayish-blue);
     border-bottom: 1px solid var(--clr-light-grayish-blue);
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .plan-item.middle {
@@ -121,8 +121,8 @@ ul {
 button {
     background: linear-gradient(var(--clr-linear-gradient));
     border: none;
-    border-radius: 6px;
-    padding: 18px 0;
+    border-radius: 0.375rem;
+    padding: 1.125rem 0;
     color: var(--clr-very-light-grayish-blue);
 }
 
