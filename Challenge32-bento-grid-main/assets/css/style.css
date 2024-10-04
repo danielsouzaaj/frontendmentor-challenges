@@ -185,3 +185,151 @@ main {
         margin: 0 auto;
     }
 }
+
+@media (min-width: 1160px) {
+
+    main {
+        padding: 5.25rem 0;
+    }
+
+    .container {
+        max-width: 1120px;
+        height: 880px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 100%;
+        overflow: hidden;
+    }
+
+    .item-1 h1 {
+        font-size: 3.5rem;
+    }
+
+    .item-2 h2 {
+        margin-top: 1rem;
+    }
+
+    .item-2 h2,
+    .item-3 h2,
+    .item-4 h2 {
+        font-size: 1.75rem;
+    }
+
+    .item-5 h2 {
+        margin: 0;
+    }
+
+    .item-5 h2,
+    .item-7 h2,
+    .item-8 h2 {
+        font-size: 2.25rem;
+    }
+
+    .item-8 h2 {
+        padding-right: 2rem;
+    }
+
+    .section-1 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    .section-2 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .item-1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+
+        padding: 52px;
+    }
+
+    .item-2 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        overflow: hidden;
+        padding: 1.25rem 1.625rem;
+    }
+
+    .item-2 img {
+        max-width: 304px;
+    }
+
+    .item-3 {
+        height: 244px;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        overflow: hidden;
+        padding: 1.625rem 1.5rem 0;
+    }
+
+    .item-3 img {
+        max-width: 100%;
+    }
+
+    .item-4 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+        text-align: left;
+        padding-left: 2rem;
+        overflow: hidden;
+    }
+
+    .item-4 img {
+        max-width: 340px;
+    }
+
+    .item-5 {
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
+
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        text-align: left;
+        padding: 1.5rem;
+    }
+
+    .item-5 img {
+        max-width: 228px;
+    }
+    
+    .item-6 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .item-7 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .item-8 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        padding: 1.5rem 0.75rem 1.5rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .item-8 img {
+        max-width: 100%;
+    }
+}
